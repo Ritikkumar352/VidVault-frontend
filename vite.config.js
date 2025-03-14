@@ -10,8 +10,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://104.154.226.183:8080',
+        target: 'http://34.57.33.195:8080',  // new statick ip
         changeOrigin: true,
+
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },

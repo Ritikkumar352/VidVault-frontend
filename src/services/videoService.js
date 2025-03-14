@@ -3,7 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // API base URL - replace with your actual backend URL
 // const API_URL = 'http://localhost:8080';
-const API_URL = 'api';
+const API_URL = 'http://34.57.33.195:8080';  // new static ip 
 
 // Fetch all videos
 // TODO -> fetch and list all uploaded videos with a delete button
