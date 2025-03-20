@@ -1,9 +1,9 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// API base URL - replace with your actual backend URL
-// const API_URL = 'http://localhost:8080';
-const API_URL = 'http://34.57.33.195:8080';  // new static ip 
+// API base URL 
+const API_URL = 'http://localhost:8080';    // working 
+// const API_URL = 'http://34.57.33.195:8080';  // new static ip  , error mixed origin and alos check CORS 
 
 // Fetch all videos
 // TODO -> fetch and list all uploaded videos with a delete button
@@ -40,7 +40,7 @@ export const uploadVideo = async (videoFile) => {
     toast.success('Video uploaded successfully!'); // Show success notification
     return data;
     
-    // return await response.json();
+    // return await response.json();  // this return giving error and success both toast
   } catch (error) {
     toast.error("Error uploading video");
     console.error('Error uploading video:', error);

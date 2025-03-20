@@ -54,7 +54,7 @@ const VideoUploader = ({ onVideoUploaded }) => {
           </label>
           <input
             id="video-upload"
-            type="file"
+           type="file"
             accept="video/*"
             onChange={handleFileChange}
             className="block w-full text-sm text-gray-500

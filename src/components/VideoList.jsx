@@ -57,7 +57,8 @@ const VideoList = ({ refreshTrigger }) => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-4">Your Videos</h2>
+      <h2 className="text-2xl font-bold mb-4">Your Videos </h2>
+      <p>old video data not on db </p>
       <div className="space-y-4">
         {videos.map(video => (
           <VideoItem 
