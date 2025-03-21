@@ -2,8 +2,9 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // API base URL 
-const API_URL = 'http://localhost:8080';    // working 
+// const API_URL = 'http://localhost:8080';    // working 
 // const API_URL = 'http://34.57.33.195:8080';  // new static ip  , error mixed origin and alos check CORS 
+const API_URL = 'https://34.57.33.195'; // No 443, it's default for HTTPS
 
 // Fetch all videos
 // TODO -> fetch and list all uploaded videos with a delete button
